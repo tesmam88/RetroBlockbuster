@@ -1,0 +1,162 @@
+/* ================= NAVBAR PUBLIC ================= */
+.navbar-public {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--creme-fundo);
+    border-bottom: 2px solid #EAEAEA;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-public .logo {
+    font-family: 'Rye', serif; /* Fonte estilizada para o logo */
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.logo-retro { color: var(--vermelho-retro); }
+.logo-block { color: var(--amarelo-block); text-shadow: 1px 1px 0px #000; }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-escuro);
+    margin: 0 20px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--vermelho-retro); }
+
+.btn-entrar {
+    border: 2px solid var(--texto-escuro);
+    background: transparent;
+    color: var(--texto-escuro);
+    padding: 8px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-entrar:hover {
+    background: var(--texto-escuro);
+    color: var(--branco);
+}
+
+/* ================= HERO SECTION (O CINEMA) ================= */
+.hero-cinema {
+    height: 100vh; /* Ocupa a tela toda */
+    /* Substitua a URL abaixo por uma imagem de cadeiras de cinema que você baixar e colocar na pasta img */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/cinema-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Espaço da navbar */
+}
+
+.hero-cinema h1 {
+    font-family: 'Rye', serif;
+    color: var(--creme-fundo);
+    font-size: 5rem;
+    line-height: 1.1;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+}
+
+.hero-cinema p {
+    color: #DDDDDD;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.btn-telao {
+    background-color: var(--amarelo-block);
+    color: var(--texto-escuro);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.btn-telao:hover {
+    transform: scale(1.05);
+}
+
+/* ================= O TELÃO DE PROJEÇÃO ================= */
+.suporte-telao {
+    width: 80%;
+    height: 30px;
+    background: linear-gradient(to bottom, #E0E0E0, #999999);
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 10;
+}
+
+.telao-conteudo {
+    width: 76%;
+    margin: 0 auto;
+    background-color: var(--branco);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in-out;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    padding: 0 40px; /* Padding lateral. O vertical é controlado no JS */
+}
+
+.telao-conteudo.aberto {
+    max-height: 2000px; /* Altura que revela os filmes */
+    padding: 40px;
+}
+
+/* Cards do Acervo no Telão */
+.grid-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-filme {
+    border: 2px solid var(--vermelho-retro);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background: var(--creme-fundo);
+}
+
+.tag-midia {
+    background: var(--vermelho-retro);
+    color: var(--branco);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card-filme h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.preco-pill {
+    background: var(--amarelo-block);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 900;
+    display: inline-block;
+}

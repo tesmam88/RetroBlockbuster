@@ -1,0 +1,24 @@
+/* Importando uma fonte retrô e clássica do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;700;900&display=swap');
+
+/* Variáveis de Cores Globais - Paleta Cine Pipoca */
+:root {
+    --vermelho-retro: #C21807;
+    --amarelo-block: #FFD700;
+    --creme-fundo: #FAF7F2;
+    --texto-escuro: #222222;
+    --branco: #FFFFFF;
+}
+
+/* Reset Básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Fonte padrão para textos */
+}
+
+body {
+    background-color: var(--creme-fundo);
+    color: var(--texto-escuro);
+}
