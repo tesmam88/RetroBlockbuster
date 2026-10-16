@@ -51,7 +51,7 @@
 .hero-cinema {
     height: 100vh; /* Ocupa a tela toda */
     /* Substitua a URL abaixo por uma imagem de cadeiras de cinema que você baixar e colocar na pasta img */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/cinema-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/cinema_retro.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
